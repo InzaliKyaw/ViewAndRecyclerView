@@ -2,6 +2,11 @@
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable
+            name="viewModel"
+            type="com.example.viewandroid.UserViewModel" />
+    </data>
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -15,13 +20,13 @@
 
 
         </androidx.constraintlayout.widget.Guideline>
-
+        <!-- Two-way binding -->
         <TextView
             android:id="@+id/txtDisplay"
             android:layout_width="0dp"
             android:layout_height="@dimen/margin_large"
             android:layout_marginEnd="@dimen/margin_xlarge"
-            android:text="@string/hello"
+            android:text="@={viewModel.displayText}"
             android:layout_marginTop="@dimen/margin_large"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="1.0"
