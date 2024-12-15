@@ -1,4 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <dimen name="margin_large">48dp</dimen>
+    <dimen name="margin_large">54dp</dimen>
+    <dimen name="margin_xlarge">64dp</dimen>
+
 </resources>
