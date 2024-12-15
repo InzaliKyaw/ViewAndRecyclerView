@@ -1,4 +1,3 @@
 package com.example.viewandroid
 
-class Constant {
-}
+const val NAME_DATA = ""
